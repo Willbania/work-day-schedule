@@ -37,3 +37,20 @@ function timeUpdater() {
 timeUpdater();
 //calls the timeUpdater function every second
 setInterval(timeUpdater, 1000); 
+
+
+
+
+
+//click function
+
+function submitForm(event) {
+event.preventDefault();
+
+let btnClick = $(event.currentTarget);
+var textTarget = btnClick.siblings('textarea');
+var targetBlock = textTarget.data('hour');
+localStorage.setItem('target block' + targetBlock, textTarget.val());
+}
+
+saveBtn.on('click', submitForm)
