@@ -1,3 +1,16 @@
+
+
+
+//uses moment.js to update time on page
+function timeUpdater() {
+
+    let today = moment();
+    //gets html element by id and asigns inner text with moment.js 
+    $('#jumboClock').text(today.format('dddd, MMMM, Do YYYY, h:mm:ss'))
+
+
+}   
+
 //Get time block and save icon elements by id using jquery
 var saveBtn = $('.save-icon')
 var blockContainerEl = $('.blockContainer')
@@ -12,7 +25,7 @@ var block4pm = $('#4PM')
 var block5pm = $('#5PM')
 
 // defines array for text elements
-var blocksElArray = {
+var blocksElArray = [
     block9am,
     block10am,
     block11am,
@@ -22,21 +35,25 @@ var blocksElArray = {
     block3pm,
     block4pm,
     block5pm,
-};
+];
 
 
+//runs the render function
+render();
 
-//uses moment.js to update time on page
-function timeUpdater() {
-
-    var today = moment();
-    //gets html element by id and asigns inner text with moment.js 
-    $('#jumboClock').text(today.format('dddd, MMMM, Do YYYY, h:mm:ss'))
-}
-
+//runs the time updater function
 timeUpdater();
 //calls the timeUpdater function every second
 setInterval(timeUpdater, 1000); 
+
+// render the textarea input data from local storage to the elements of blocksElArray
+
+function render() {
+    for (let element of blocksElArray) {
+        element.val(localStorage.getItem('target block' + element.data('hour')))
+    }
+
+}
 
 
 
