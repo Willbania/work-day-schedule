@@ -39,6 +39,6 @@ The following animation demonstrates the application functionality:
 
 
 
-[The URL of the deployed application] (https://willbania.github.io/work-day-schedule/)
+[The URL of the deployed application](https://willbania.github.io/work-day-schedule/)
 
-[The URL of the GitHub repository, with a unique name and a README describing the projec](https://github.com/Willbania/work-day-schedule)
+[The URL of the GitHub repository, with a unique name and a README describing the project](https://github.com/Willbania/work-day-schedule)
