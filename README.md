@@ -39,9 +39,6 @@ The following animation demonstrates the application functionality:
 
 
 
-* The URL of the deployed application
+[The URL of the deployed application](https://willbania.github.io/work-day-schedule/)
 
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+[The URL of the GitHub repository, with a unique name and a README describing the project](https://github.com/Willbania/work-day-schedule)
